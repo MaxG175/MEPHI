@@ -1,0 +1,72 @@
+    1  ls -l
+    2  touch file
+    3  ls
+    4  touch "This is my file"
+    5  ls
+    6  su
+    7  rm This is my file
+    8  echo
+    9  su
+   10  ssh-keygen
+   11  x=1
+   12  echo "$x"
+   13  man touch
+   14  ls
+   15  cd Документы/
+   16  mkdir Mephi
+   17  cd Mephi/
+   18  ls
+   19  git clone https://github.com/MaxG175/MEPHI.git
+   20  git status
+   21  vim README.MD
+   22  cat README.MD 
+   23  git status 
+   24  ls
+   25  mv README.MD -d MEPHI/
+   26  man mv
+   27  mv README.MD -t MEPHI/
+   28  ls
+   29  cd MEPHI/
+   30  ls
+   31  git status 
+   32  git add .
+   33  git commit -m "add readme"
+   34  git push -u origin master 
+   35  ls
+   36  vim README.MD 
+   37  git status
+   38  git add .
+   39  git commit -m
+   40  git commit -m "corrected readme"
+   41  git push -u origin master
+   42  ssh-keygen
+   43  cd /home/gmaxim/.ssh/id_rsa.pub.
+   44  cd /home/gmaxim/.ssh/id_rsa.pub
+   45  cat /home/gmaxim/.ssh/id_rsa.pub
+   46  cd Документы/
+   47  ls
+   48  cd Mephi/MEPHI/
+   49  ls
+   50  cd ~
+   51  ls
+   52  ssh-keygen
+   53  y
+   54  cd /home/gmaxim/.ssh/
+   55  ls
+   56  cat id_rsa.pub 
+   57  exit
+   58  cd /home/gmaxim/.ssh/
+   59  cat id_rsa.pub 
+   60  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdqGBlgAGYMpvtq3fqQ/iWI7G/j7grcki+TGjAkq3jechvlUBhdvjxCmEhHneJLpFLSaBmXR7zdQUebbfCi96FvIh/cw1KKfXhT4zxWfNp6h27eHA5bVsSbe/4g8UyscXeGBxEZzszcr0sWs7yM1Pw/tl9q1/8SE7rDpq9LV6mDfKs5kEqS8kBmSZO6kzFO2PntxCe9kSxL6N9hk4WwZ1xuR9NE0etxuTSZEsZalyYr8DMHDPyhagxdCnexbE5P7wESfyLTKgN8LQLWGKsPa8evosa39h5FvK17jhUdR18FemsC5qBl+jJ8bY77HLFSozgbK3w0RYQQgVBw+0VwOCH gmaxim@localhost.localdomain
+   61  exit
+   62  cd Документы/
+   63  cd Mephi/
+   64  cd MEPHI/
+   65  ls
+   66  vim README.MD 
+   67  git status
+   68  git add .
+   69  git commit -m "add info"
+   70  git push -u origin master
+   71  history
+   72  history > testhistory.txt
