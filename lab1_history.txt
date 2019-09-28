@@ -1,0 +1,107 @@
+1) # Работа с командной оболочкой и справочной системой #
+
+
+    1  whoami
+    2  whoaim
+    3  whoami
+    4  echo "Hello World"
+    5  date
+    6  cal
+    7  cal -3
+    8  history
+    9  clear
+   10  history >> lab1_history.txt
+
+2) #Перемещение по файловой системе #
+
+
+    1  pwd
+    2  cd /
+    3  cd ..
+    4  pwd
+    5  ls
+    6  ls /var
+    7  cd ~
+    8  cd ..
+    9  pwd
+   10  ls
+   11  cd ~
+   12  ls -l
+   13  history >> lab1_history.txt
+
+3) #Работа с файловой системой #
+
+
+    1  cd
+    2  mkdir fruits
+    3  cd /
+    4  mkdir ~/animals
+    5  touch /tmp/temp
+    6  cd ~/fruits
+    7  touch apple banana pineaple lion
+    8  touch ~/animals/cat.txt ~/animals/dog.txt ~/animals/elephant.txt
+    9  ls -l apple
+   10  ls b*
+   11  ls *a
+   12  ls [bi]*
+   13  cp /etc/passwd ~
+   14  cat /etc/issue
+   15  cp /etc/issue apple
+   16  cat apple
+   17  mv lion ~/animals
+   18  mv pineaple pineapple
+   19  wc -l /etc/passwd
+   20  cd ~
+   21  ln -s /etc/passwd passwd_link
+   22  ln .bash_history history_hard
+   23  ls -l .bash_history
+   24  rm fruits/apple
+   25  mkdir rmme
+   26  rmdir rmme
+   27  rm -fr fruits
+   28  cp /etc/init.d/ ~
+   29  cp -r /etc/init.d/ ~
+   30  rm -fr init.d
+   31  history >> lab1_history.txt
+
+4) #Конвейеры. Обработка текстовых файлов#
+
+
+    1  cut -d: -f1 /etc/passwd | sort
+    2  cut -d: -f1,3,4 /etc/passwd | column -ts: | less
+    3  cut -d: -f1,3 /etc/passwd | column -ts: | less
+    4  grep :/bin/bash /etc/passwd | wc -l
+    5  grep :/bin/bash /etc/passwd | cut -d: -f1 | sort -r
+    6  rpm -qa --qf '%{NAME}: %{SIZE}\n' | sort -rn -k2,2 |head -25
+    7  rpm -ql man-db | xargs -l du    2> /dev/null  | sort -n
+    8  top -b -n1 | sort -k2,1
+    9  top -b -n1 | tail -n+8 | cut -c7-  | tr -s ' ' '\t' | cut -f11,5
+   10  cat /etc/passwd|sort -k2,1|tr ":" " "
+   11  cut -d: -f1,7 /etc/passwd| sort -k2,1
+   12  cd /usr/share/doc/git-*
+   13  cat user-manual.txt | tr ' ' '\012' | tr '[:upper:]' '[:lower:]' | tr -d '[:punct:]' | grep -v '[^a-z]' | sort | uniq -c | sort -rn | head -5
+   14  cat user-manual.txt | tr -cs '[:alpha:]' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn | head -5
+   15  tr '[:lower:]' '[:upper:]' < user-manual.txt |  tr -d '[:punct:] \n\t' | fold -w1 | sort | uniq -c | sort -rn | head -5
+   16  tr -cs '[:alpha:]' '\n' < user-manual.txt | less | grep -E ........ | sort | uniq -c | sort -rn | head
+   17  history >> ~/lab1_history.txt
+
+5) #Работа с сетью#
+
+
+    1  ping ya.ru
+    2  curl wttr.in
+    3  hostname -I
+    4  curl ifconfig.me
+    5  wget https://raw.githubusercontent.com/jlevy/the-art-of-command-line/master/README-ru.md
+    6  less README-ru.md
+    7  history >> lab1_history.txt
+
+6) #Получение прав root #
+
+    1  id
+    2  whoami
+    3  sudo id
+    4  sudo less /var/log/messages
+    5   less /var/log/messages
+    6  su
+    7  history >> lab1_history.txt
