@@ -1,0 +1,11 @@
+#результат команды ls-lR в каталоге test#
+.:
+итого 4
+drw-rw-r--. 2 gmaxim gmaxim 22 сен 28 23:33 dir
+-rw-r-----. 1 root   gmaxim  5 сен 28 23:29 file
+-rw-------. 1 gmaxim gmaxim  0 сен 28 23:42 file1
+-rw-rw-rw-. 1 gmaxim gmaxim  0 сен 28 23:43 file2
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file

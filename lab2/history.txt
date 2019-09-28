@@ -1,0 +1,40 @@
+#Управление доступом к файлам #
+
+
+    1  mkdir test
+    2  cd test
+    3  touch file
+    4  ll file
+    5  chmod ugo-rwx file
+    6  echo "тест" > file
+    7  cat file
+    8  chmod u+w file
+    9  ll file
+   10  echo "test" > file
+   11  cat file
+   12  chmod g+r file
+   13  ll file
+   14  cat file
+   15  chmod u+r file
+   16  ll file
+   17  cat file
+   18  mkdir dir
+   19  touch dir/new_file
+   20  echo "file 2" > dir/new_file
+   21  ls dir
+   22  chmod ugo-x dir
+   23  cat dir/new_file
+   24  rm dir/new_file
+   25  chown root file
+   26  chown :root file
+   27  umask 0077
+   28  touch file1
+   29  ll file1
+   30  umask 0000
+   31  touch file2
+   32  ll file2
+   33  su
+   34  cat file
+   35  su
+   36  cat file
+   37  history >> ~/lab2/history.txt
